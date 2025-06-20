@@ -16,7 +16,8 @@ This project is a custom implementation of an **AI-powered agent system** capabl
 
 ## 🌐 Demo Screenshot
 
-![Web UI Screenshot] ![Interface](https://github.com/user-attachments/assets/5b616865-7861-4921-868c-36682bbe135c)
+![Web UI Screenshot]  ![Screenshot 2025-06-20 141059](https://github.com/user-attachments/assets/2987ae76-7950-425e-a48c-b5a0149d87f7)
+
 ![Screenshot 2025-06-20 140705](https://github.com/user-attachments/assets/005ca02a-153f-46b9-8384-2ce343562c62)
 ![Screenshot 2025-06-20 140819](https://github.com/user-attachments/assets/9c3ed042-ce3a-4798-8ae4-b33ce7bd0f06)
 
