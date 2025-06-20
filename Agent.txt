@@ -1,0 +1,669 @@
+C:\Users\shara>pip3 install browser-use
+Collecting browser-use
+  Downloading browser_use-0.2.7-py3-none-any.whl.metadata (10 kB)
+Collecting aiofiles>=24.1.0 (from browser-use)
+  Using cached aiofiles-24.1.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: anyio>=4.9.0 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from browser-use) (4.9.0)
+Collecting faiss-cpu>=1.11.0 (from browser-use)
+  Downloading faiss_cpu-1.11.0-cp313-cp313-win_amd64.whl.metadata (5.0 kB)
+Collecting google-api-core>=2.25.0 (from browser-use)
+  Downloading google_api_core-2.25.1-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: httpx>=0.28.1 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from browser-use) (0.28.1)
+Collecting langchain-anthropic==0.3.15 (from browser-use)
+  Downloading langchain_anthropic-0.3.15-py3-none-any.whl.metadata (1.9 kB)
+Collecting langchain-aws>=0.2.24 (from browser-use)
+  Downloading langchain_aws-0.2.26-py3-none-any.whl.metadata (3.2 kB)
+Collecting langchain-core==0.3.64 (from browser-use)
+  Downloading langchain_core-0.3.64-py3-none-any.whl.metadata (5.8 kB)
+Collecting langchain-deepseek>=0.1.3 (from browser-use)
+  Downloading langchain_deepseek-0.1.3-py3-none-any.whl.metadata (1.1 kB)
+Collecting langchain-google-genai==2.1.5 (from browser-use)
+  Downloading langchain_google_genai-2.1.5-py3-none-any.whl.metadata (5.2 kB)
+Collecting langchain-ollama==0.3.3 (from browser-use)
+  Downloading langchain_ollama-0.3.3-py3-none-any.whl.metadata (1.5 kB)
+Collecting langchain-openai==0.3.21 (from browser-use)
+  Downloading langchain_openai-0.3.21-py3-none-any.whl.metadata (2.3 kB)
+Collecting langchain>=0.3.25 (from browser-use)
+  Downloading langchain-0.3.25-py3-none-any.whl.metadata (7.8 kB)
+Collecting markdownify==1.1.0 (from browser-use)
+  Downloading markdownify-1.1.0-py3-none-any.whl.metadata (9.1 kB)
+Collecting mem0ai>=0.1.106 (from browser-use)
+  Downloading mem0ai-0.1.109-py3-none-any.whl.metadata (8.7 kB)
+Collecting patchright>=1.52.5 (from browser-use)
+  Downloading patchright-1.52.5-py3-none-win_amd64.whl.metadata (10 kB)
+Collecting playwright>=1.52.0 (from browser-use)
+  Downloading playwright-1.52.0-py3-none-win_amd64.whl.metadata (3.5 kB)
+Collecting posthog>=3.7.0 (from browser-use)
+  Downloading posthog-5.3.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting psutil>=7.0.0 (from browser-use)
+  Using cached psutil-7.0.0-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting pydantic>=2.11.5 (from browser-use)
+  Using cached pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+Collecting pyperclip>=1.9.0 (from browser-use)
+  Downloading pyperclip-1.9.0.tar.gz (20 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: python-dotenv>=1.0.1 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from browser-use) (1.0.1)
+Collecting requests>=2.32.3 (from browser-use)
+  Using cached requests-2.32.4-py3-none-any.whl.metadata (4.9 kB)
+Collecting screeninfo>=0.8.1 (from browser-use)
+  Downloading screeninfo-0.8.1-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: typing-extensions>=4.12.2 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from browser-use) (4.13.1)
+Collecting uuid7>=0.1.0 (from browser-use)
+  Downloading uuid7-0.1.0-py2.py3-none-any.whl.metadata (3.6 kB)
+Collecting anthropic<1,>=0.52.0 (from langchain-anthropic==0.3.15->browser-use)
+  Downloading anthropic-0.54.0-py3-none-any.whl.metadata (25 kB)
+Collecting langsmith<0.4,>=0.3.45 (from langchain-core==0.3.64->browser-use)
+  Downloading langsmith-0.3.45-py3-none-any.whl.metadata (15 kB)
+Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core==0.3.64->browser-use)
+  Using cached tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain-core==0.3.64->browser-use)
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting PyYAML>=5.3 (from langchain-core==0.3.64->browser-use)
+  Using cached PyYAML-6.0.2-cp313-cp313-win_amd64.whl.metadata (2.1 kB)
+Collecting packaging<25,>=23.2 (from langchain-core==0.3.64->browser-use)
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting filetype<2.0.0,>=1.2.0 (from langchain-google-genai==2.1.5->browser-use)
+  Downloading filetype-1.2.0-py2.py3-none-any.whl.metadata (6.5 kB)
+Collecting google-ai-generativelanguage<0.7.0,>=0.6.18 (from langchain-google-genai==2.1.5->browser-use)
+  Downloading google_ai_generativelanguage-0.6.18-py3-none-any.whl.metadata (9.8 kB)
+Collecting ollama<1.0.0,>=0.4.8 (from langchain-ollama==0.3.3->browser-use)
+  Downloading ollama-0.5.1-py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: openai<2.0.0,>=1.68.2 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from langchain-openai==0.3.21->browser-use) (1.71.0)
+Collecting tiktoken<1,>=0.7 (from langchain-openai==0.3.21->browser-use)
+  Downloading tiktoken-0.9.0-cp313-cp313-win_amd64.whl.metadata (6.8 kB)
+Collecting beautifulsoup4<5,>=4.9 (from markdownify==1.1.0->browser-use)
+  Downloading beautifulsoup4-4.13.4-py3-none-any.whl.metadata (3.8 kB)
+Collecting six<2,>=1.15 (from markdownify==1.1.0->browser-use)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Requirement already satisfied: idna>=2.8 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from anyio>=4.9.0->browser-use) (3.10)
+Requirement already satisfied: sniffio>=1.1 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from anyio>=4.9.0->browser-use) (1.3.1)
+Requirement already satisfied: numpy<3.0,>=1.25.0 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from faiss-cpu>=1.11.0->browser-use) (2.1.3)
+Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core>=2.25.0->browser-use)
+  Downloading googleapis_common_protos-1.70.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.19.5 (from google-api-core>=2.25.0->browser-use)
+  Using cached protobuf-6.31.1-cp310-abi3-win_amd64.whl.metadata (593 bytes)
+Collecting proto-plus<2.0.0,>=1.22.3 (from google-api-core>=2.25.0->browser-use)
+  Downloading proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-auth<3.0.0,>=2.14.1 (from google-api-core>=2.25.0->browser-use)
+  Downloading google_auth-2.40.3-py2.py3-none-any.whl.metadata (6.2 kB)
+Requirement already satisfied: certifi in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from httpx>=0.28.1->browser-use) (2025.1.31)
+Requirement already satisfied: httpcore==1.* in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from httpx>=0.28.1->browser-use) (1.0.7)
+Requirement already satisfied: h11<0.15,>=0.13 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from httpcore==1.*->httpx>=0.28.1->browser-use) (0.14.0)
+Collecting langchain-text-splitters<1.0.0,>=0.3.8 (from langchain>=0.3.25->browser-use)
+  Downloading langchain_text_splitters-0.3.8-py3-none-any.whl.metadata (1.9 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain>=0.3.25->browser-use)
+  Downloading sqlalchemy-2.0.41-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+Collecting boto3>=1.37.24 (from langchain-aws>=0.2.24->browser-use)
+  Downloading boto3-1.38.40-py3-none-any.whl.metadata (6.6 kB)
+INFO: pip is looking at multiple versions of langchain-aws to determine which version is compatible with other requirements. This could take a while.
+Collecting langchain-aws>=0.2.24 (from browser-use)
+  Downloading langchain_aws-0.2.25-py3-none-any.whl.metadata (3.2 kB)
+Collecting pytz>=2024.1 (from mem0ai>=0.1.106->browser-use)
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting qdrant-client>=1.9.1 (from mem0ai>=0.1.106->browser-use)
+  Downloading qdrant_client-1.14.3-py3-none-any.whl.metadata (10 kB)
+Collecting pyee<14,>=13 (from patchright>=1.52.5->browser-use)
+  Downloading pyee-13.0.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting greenlet<4.0.0,>=3.1.1 (from patchright>=1.52.5->browser-use)
+  Downloading greenlet-3.2.3-cp313-cp313-win_amd64.whl.metadata (4.2 kB)
+Collecting python-dateutil>=2.2 (from posthog>=3.7.0->browser-use)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting backoff>=1.10.0 (from posthog>=3.7.0->browser-use)
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: distro>=1.5.0 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from posthog>=3.7.0->browser-use) (1.9.0)
+Requirement already satisfied: annotated-types>=0.6.0 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from pydantic>=2.11.5->browser-use) (0.7.0)
+Collecting pydantic-core==2.33.2 (from pydantic>=2.11.5->browser-use)
+  Using cached pydantic_core-2.33.2-cp313-cp313-win_amd64.whl.metadata (6.9 kB)
+Requirement already satisfied: typing-inspection>=0.4.0 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from pydantic>=2.11.5->browser-use) (0.4.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from requests>=2.32.3->browser-use) (3.4.1)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from requests>=2.32.3->browser-use) (2.3.0)
+Requirement already satisfied: jiter<1,>=0.4.0 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from anthropic<1,>=0.52.0->langchain-anthropic==0.3.15->browser-use) (0.9.0)
+Collecting soupsieve>1.2 (from beautifulsoup4<5,>=4.9->markdownify==1.1.0->browser-use)
+  Downloading soupsieve-2.7-py3-none-any.whl.metadata (4.6 kB)
+Collecting botocore<1.39.0,>=1.38.40 (from boto3>=1.37.24->langchain-aws>=0.2.24->browser-use)
+  Downloading botocore-1.38.40-py3-none-any.whl.metadata (5.7 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3>=1.37.24->langchain-aws>=0.2.24->browser-use)
+  Downloading jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.14.0,>=0.13.0 (from boto3>=1.37.24->langchain-aws>=0.2.24->browser-use)
+  Downloading s3transfer-0.13.0-py3-none-any.whl.metadata (1.7 kB)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth<3.0.0,>=2.14.1->google-api-core>=2.25.0->browser-use)
+  Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.0,>=2.14.1->google-api-core>=2.25.0->browser-use)
+  Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth<3.0.0,>=2.14.1->google-api-core>=2.25.0->browser-use)
+  Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0,>=1.33->langchain-core==0.3.64->browser-use)
+  Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+Collecting orjson<4.0.0,>=3.9.14 (from langsmith<0.4,>=0.3.45->langchain-core==0.3.64->browser-use)
+  Using cached orjson-3.10.18-cp313-cp313-win_amd64.whl.metadata (43 kB)
+Collecting requests-toolbelt<2.0.0,>=1.0.0 (from langsmith<0.4,>=0.3.45->langchain-core==0.3.64->browser-use)
+  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting zstandard<0.24.0,>=0.23.0 (from langsmith<0.4,>=0.3.45->langchain-core==0.3.64->browser-use)
+  Downloading zstandard-0.23.0-cp313-cp313-win_amd64.whl.metadata (3.0 kB)
+Requirement already satisfied: tqdm>4 in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from openai<2.0.0,>=1.68.2->langchain-openai==0.3.21->browser-use) (4.67.1)
+Collecting grpcio>=1.41.0 (from qdrant-client>=1.9.1->mem0ai>=0.1.106->browser-use)
+  Downloading grpcio-1.73.0-cp313-cp313-win_amd64.whl.metadata (4.0 kB)
+Collecting portalocker<3.0.0,>=2.7.0 (from qdrant-client>=1.9.1->mem0ai>=0.1.106->browser-use)
+  Downloading portalocker-2.10.1-py3-none-any.whl.metadata (8.5 kB)
+Collecting regex>=2022.1.18 (from tiktoken<1,>=0.7->langchain-openai==0.3.21->browser-use)
+  Using cached regex-2024.11.6-cp313-cp313-win_amd64.whl.metadata (41 kB)
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1->google-ai-generativelanguage<0.7.0,>=0.6.18->langchain-google-genai==2.1.5->browser-use)
+  Downloading grpcio_status-1.73.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting h2<5,>=3 (from httpx[http2]>=0.20.0->qdrant-client>=1.9.1->mem0ai>=0.1.106->browser-use)
+  Downloading h2-4.2.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting pywin32>=226 (from portalocker<3.0.0,>=2.7.0->qdrant-client>=1.9.1->mem0ai>=0.1.106->browser-use)
+  Downloading pywin32-310-cp313-cp313-win_amd64.whl.metadata (9.4 kB)
+Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.14.1->google-api-core>=2.25.0->browser-use)
+  Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: colorama in c:\users\shara\appdata\local\programs\python\python313\lib\site-packages (from tqdm>4->openai<2.0.0,>=1.68.2->langchain-openai==0.3.21->browser-use) (0.4.6)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[http2]>=0.20.0->qdrant-client>=1.9.1->mem0ai>=0.1.106->browser-use)
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.1 (from h2<5,>=3->httpx[http2]>=0.20.0->qdrant-client>=1.9.1->mem0ai>=0.1.106->browser-use)
+  Downloading hpack-4.1.0-py3-none-any.whl.metadata (4.6 kB)
+Downloading browser_use-0.2.7-py3-none-any.whl (172 kB)
+Downloading langchain_anthropic-0.3.15-py3-none-any.whl (28 kB)
+Downloading langchain_core-0.3.64-py3-none-any.whl (438 kB)
+Downloading langchain_google_genai-2.1.5-py3-none-any.whl (44 kB)
+Downloading langchain_ollama-0.3.3-py3-none-any.whl (21 kB)
+Downloading langchain_openai-0.3.21-py3-none-any.whl (65 kB)
+Downloading markdownify-1.1.0-py3-none-any.whl (13 kB)
+Using cached aiofiles-24.1.0-py3-none-any.whl (15 kB)
+Downloading faiss_cpu-1.11.0-cp313-cp313-win_amd64.whl (15.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.0/15.0 MB 5.5 MB/s eta 0:00:00
+Downloading google_api_core-2.25.1-py3-none-any.whl (160 kB)
+Downloading langchain-0.3.25-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 4.4 MB/s eta 0:00:00
+Downloading langchain_aws-0.2.25-py3-none-any.whl (120 kB)
+Downloading langchain_deepseek-0.1.3-py3-none-any.whl (7.1 kB)
+Downloading mem0ai-0.1.109-py3-none-any.whl (162 kB)
+Downloading patchright-1.52.5-py3-none-win_amd64.whl (34.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.8/34.8 MB 4.1 MB/s eta 0:00:00
+Downloading playwright-1.52.0-py3-none-win_amd64.whl (34.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.8/34.8 MB 4.9 MB/s eta 0:00:00
+Downloading posthog-5.3.0-py3-none-any.whl (103 kB)
+Using cached psutil-7.0.0-cp37-abi3-win_amd64.whl (244 kB)
+Using cached pydantic-2.11.7-py3-none-any.whl (444 kB)
+Using cached pydantic_core-2.33.2-cp313-cp313-win_amd64.whl (2.0 MB)
+Using cached requests-2.32.4-py3-none-any.whl (64 kB)
+Downloading screeninfo-0.8.1-py3-none-any.whl (12 kB)
+Downloading uuid7-0.1.0-py2.py3-none-any.whl (7.5 kB)
+Downloading anthropic-0.54.0-py3-none-any.whl (288 kB)
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Downloading beautifulsoup4-4.13.4-py3-none-any.whl (187 kB)
+Downloading boto3-1.38.40-py3-none-any.whl (139 kB)
+Downloading filetype-1.2.0-py2.py3-none-any.whl (19 kB)
+Downloading google_ai_generativelanguage-0.6.18-py3-none-any.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 2.9 MB/s eta 0:00:00
+Downloading google_auth-2.40.3-py2.py3-none-any.whl (216 kB)
+Downloading googleapis_common_protos-1.70.0-py3-none-any.whl (294 kB)
+Downloading greenlet-3.2.3-cp313-cp313-win_amd64.whl (297 kB)
+Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading langchain_text_splitters-0.3.8-py3-none-any.whl (32 kB)
+Downloading langsmith-0.3.45-py3-none-any.whl (363 kB)
+Downloading ollama-0.5.1-py3-none-any.whl (13 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Downloading proto_plus-1.26.1-py3-none-any.whl (50 kB)
+Using cached protobuf-6.31.1-cp310-abi3-win_amd64.whl (435 kB)
+Downloading pyee-13.0.0-py3-none-any.whl (15 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached PyYAML-6.0.2-cp313-cp313-win_amd64.whl (156 kB)
+Downloading qdrant_client-1.14.3-py3-none-any.whl (328 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading sqlalchemy-2.0.41-cp313-cp313-win_amd64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 4.6 MB/s eta 0:00:00
+Using cached tenacity-9.1.2-py3-none-any.whl (28 kB)
+Downloading tiktoken-0.9.0-cp313-cp313-win_amd64.whl (894 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━ 894.7/894.7 kB 4.6 MB/s eta 0:00:00
+Downloading botocore-1.38.40-py3-none-any.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 4.0 MB/s eta 0:00:00
+Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+Downloading grpcio-1.73.0-cp313-cp313-win_amd64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 2.6 MB/s eta 0:00:00
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+Using cached orjson-3.10.18-cp313-cp313-win_amd64.whl (134 kB)
+Downloading portalocker-2.10.1-py3-none-any.whl (18 kB)
+Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached regex-2024.11.6-cp313-cp313-win_amd64.whl (273 kB)
+Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+Downloading s3transfer-0.13.0-py3-none-any.whl (85 kB)
+Downloading soupsieve-2.7-py3-none-any.whl (36 kB)
+Downloading zstandard-0.23.0-cp313-cp313-win_amd64.whl (495 kB)
+Downloading grpcio_status-1.73.0-py3-none-any.whl (14 kB)
+Downloading h2-4.2.0-py3-none-any.whl (60 kB)
+Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Downloading pywin32-310-cp313-cp313-win_amd64.whl (9.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.5/9.5 MB 4.9 MB/s eta 0:00:00
+Downloading hpack-4.1.0-py3-none-any.whl (34 kB)
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Building wheels for collected packages: pyperclip
+  Building wheel for pyperclip (pyproject.toml) ... done
+  Created wheel for pyperclip: filename=pyperclip-1.9.0-py3-none-any.whl size=11117 sha256=7913fa26534fd93aaa02bfd2a347ca016df91a98d19f4c3687e0c812968975c0
+  Stored in directory: c:\users\shara\appdata\local\pip\cache\wheels\9c\79\90\c9e831caaffa2633ad99f1d35c6ea39866b92de62e909e89ef
+Successfully built pyperclip
+Installing collected packages: pywin32, pytz, pyperclip, filetype, zstandard, uuid7, tenacity, soupsieve, six, screeninfo, requests, regex, PyYAML, pyee, pydantic-core, pyasn1, psutil, protobuf, portalocker, packaging, orjson, jsonpointer, jmespath, hyperframe, hpack, grpcio, greenlet, cachetools, backoff, aiofiles, tiktoken, SQLAlchemy, rsa, requests-toolbelt, python-dateutil, pydantic, pyasn1-modules, proto-plus, playwright, patchright, jsonpatch, h2, googleapis-common-protos, faiss-cpu, beautifulsoup4, posthog, ollama, markdownify, langsmith, grpcio-status, google-auth, botocore, anthropic, s3transfer, qdrant-client, langchain-core, google-api-core, mem0ai, langchain-text-splitters, langchain-openai, langchain-ollama, langchain-anthropic, boto3, langchain-deepseek, langchain-aws, langchain, google-ai-generativelanguage, langchain-google-genai, browser-use
+  Attempting uninstall: requests
+    Found existing installation: requests 2.31.0
+    Uninstalling requests-2.31.0:
+      Successfully uninstalled requests-2.31.0
+  Attempting uninstall: pydantic-core
+    Found existing installation: pydantic_core 2.33.1
+    Uninstalling pydantic_core-2.33.1:
+      Successfully uninstalled pydantic_core-2.33.1
+  Attempting uninstall: pydantic
+    Found existing installation: pydantic 2.11.2
+    Uninstalling pydantic-2.11.2:
+      Successfully uninstalled pydantic-2.11.2
+Successfully installed PyYAML-6.0.2 SQLAlchemy-2.0.41 aiofiles-24.1.0 anthropic-0.54.0 backoff-2.2.1 beautifulsoup4-4.13.4 boto3-1.38.40 botocore-1.38.40 browser-use-0.2.7 cachetools-5.5.2 faiss-cpu-1.11.0 filetype-1.2.0 google-ai-generativelanguage-0.6.18 google-api-core-2.25.1 google-auth-2.40.3 googleapis-common-protos-1.70.0 greenlet-3.2.3 grpcio-1.73.0 grpcio-status-1.73.0 h2-4.2.0 hpack-4.1.0 hyperframe-6.1.0 jmespath-1.0.1 jsonpatch-1.33 jsonpointer-3.0.0 langchain-0.3.25 langchain-anthropic-0.3.15 langchain-aws-0.2.25 langchain-core-0.3.64 langchain-deepseek-0.1.3 langchain-google-genai-2.1.5 langchain-ollama-0.3.3 langchain-openai-0.3.21 langchain-text-splitters-0.3.8 langsmith-0.3.45 markdownify-1.1.0 mem0ai-0.1.109 ollama-0.5.1 orjson-3.10.18 packaging-24.2 patchright-1.52.5 playwright-1.52.0 portalocker-2.10.1 posthog-5.3.0 proto-plus-1.26.1 protobuf-6.31.1 psutil-7.0.0 pyasn1-0.6.1 pyasn1-modules-0.4.2 pydantic-2.11.7 pydantic-core-2.33.2 pyee-13.0.0 pyperclip-1.9.0 python-dateutil-2.9.0.post0 pytz-2025.2 pywin32-310 qdrant-client-1.14.3 regex-2024.11.6 requests-2.32.4 requests-toolbelt-1.0.0 rsa-4.9.1 s3transfer-0.13.0 screeninfo-0.8.1 six-1.17.0 soupsieve-2.7 tenacity-9.1.2 tiktoken-0.9.0 uuid7-0.1.0 zstandard-0.23.0
+
+[notice] A new release of pip is available: 24.3.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Users\shara>playwright install
+Downloading Chromium 136.0.7103.25 (playwright build v1169) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1169/chromium-win64.zip
+144.4 MiB [====================] 100% 0.0s
+Chromium 136.0.7103.25 (playwright build v1169) downloaded to C:\Users\shara\AppData\Local\ms-playwright\chromium-1169
+Downloading Chromium Headless Shell 136.0.7103.25 (playwright build v1169) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1169/chromium-headless-shell-win64.zip
+89.1 MiB [====================] 100% 0.0s
+Chromium Headless Shell 136.0.7103.25 (playwright build v1169) downloaded to C:\Users\shara\AppData\Local\ms-playwright\chromium_headless_shell-1169
+Downloading Firefox 137.0 (playwright build v1482) from https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1482/firefox-win64.zip
+92.1 MiB [====================] 100% 0.0s
+Firefox 137.0 (playwright build v1482) downloaded to C:\Users\shara\AppData\Local\ms-playwright\firefox-1482
+Downloading Webkit 18.4 (playwright build v2158) from https://cdn.playwright.dev/dbazure/download/playwright/builds/webkit/2158/webkit-win64.zip
+57.1 MiB [====================] 100% 0.0s
+Webkit 18.4 (playwright build v2158) downloaded to C:\Users\shara\AppData\Local\ms-playwright\webkit-2158
+Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-win64.zip
+1.3 MiB [====================] 100% 0.0s
+FFMPEG playwright build v1011 downloaded to C:\Users\shara\AppData\Local\ms-playwright\ffmpeg-1011
+Downloading Winldd playwright build v1007 from https://cdn.playwright.dev/dbazure/download/playwright/builds/winldd/1007/winldd-win64.zip
+0.1 MiB [====================] 100% 0.0s
+Winldd playwright build v1007 downloaded to C:\Users\shara\AppData\Local\ms-playwright\winldd-1007
+
+C:\Users\shara>cd desktop
+The system cannot find the path specified.
+
+C:\Users\shara>cd -desktop
+The system cannot find the path specified.
+
+C:\Users\shara>cd
+C:\Users\shara
+
+C:\Users\shara>cd desktop
+The system cannot find the path specified.
+
+C:\Users\shara>
+
+C:\Users\shara>
+
+C:\Users\shara>cd Desktop
+The system cannot find the path specified.
+
+C:\Users\shara>dir
+ Volume in drive C is OS
+ Volume Serial Number is 8AB4-0BDD
+
+ Directory of C:\Users\shara
+
+06/13/2025  10:45 AM    <DIR>          .
+12/31/2024  09:54 PM    <DIR>          ..
+05/07/2025  12:58 PM    <DIR>          .android
+03/22/2024  03:55 PM               321 .bash_history
+06/06/2024  11:52 AM    <DIR>          .cache
+12/01/2024  06:18 PM    <DIR>          .conda
+11/04/2024  11:18 PM                25 .condarc
+08/20/2023  08:10 PM    <DIR>          .continuum
+02/03/2025  11:22 AM    <DIR>          .cursor
+09/03/2024  02:07 PM                16 .emulator_console_auth_token
+06/13/2025  10:20 AM               210 .gitconfig
+11/05/2024  01:44 PM    <DIR>          .gnupg
+02/22/2025  04:18 PM    <DIR>          .gradle
+09/21/2022  03:46 PM    <DIR>          .idlerc
+11/04/2024  11:59 PM    <DIR>          .ipynb_checkpoints
+03/22/2024  04:24 PM    <DIR>          .ipython
+05/04/2025  06:22 PM    <DIR>          .javacpp
+08/20/2023  08:11 PM    <DIR>          .jupyter
+06/13/2025  10:45 AM                20 .lesshst
+11/28/2024  12:32 PM    <DIR>          .m2
+08/23/2023  10:38 PM    <DIR>          .matplotlib
+03/07/2025  10:57 PM    <DIR>          .skiko
+04/08/2025  02:18 PM    <DIR>          .trae
+04/08/2025  02:23 PM    <DIR>          .trae-aicc
+01/24/2025  02:30 PM    <DIR>          .VPNMaster
+09/14/2023  11:33 AM    <DIR>          .vscode
+04/08/2025  02:23 PM    <DIR>          ai_completion
+08/20/2023  08:10 PM    <DIR>          anaconda3
+05/07/2025  03:45 AM    <DIR>          AndroidStudioProjects
+03/07/2023  06:06 PM                 0 cd
+04/10/2023  11:03 AM    <DIR>          Contacts
+06/13/2025  10:16 AM    <DIR>          Day2
+08/21/2022  03:57 AM    <DIR>          Documents
+06/20/2025  10:21 AM    <DIR>          Downloads
+04/10/2023  11:03 AM    <DIR>          Favorites
+10/14/2023  06:13 PM    <DIR>          HitPaw
+04/10/2023  11:03 AM    <DIR>          Links
+02/17/2023  05:59 PM                57 mercurial.ini
+11/03/2023  12:33 PM    <DIR>          Microsoft
+10/14/2023  05:27 PM    <DIR>          Music
+04/08/2025  02:27 PM    <DIR>          New folder
+06/19/2025  09:30 PM    <DIR>          OneDrive
+06/09/2024  10:49 PM    <DIR>          Postman
+04/10/2023  11:03 AM    <DIR>          Saved Games
+05/17/2023  04:02 PM    <DIR>          Searches
+11/04/2024  11:58 PM    <DIR>          tumorous_and_nontumorous
+04/03/2025  12:24 PM    <DIR>          Unit4
+03/12/2025  11:40 PM    <DIR>          Videos
+02/03/2025  11:46 AM    <DIR>          VS notes
+               7 File(s)            649 bytes
+              42 Dir(s)  217,774,391,296 bytes free
+
+C:\Users\shara>cd Desktop
+The system cannot find the path specified.
+                                                                C:\Users\shara>cmd                                              Microsoft Windows [Version 10.0.22631.5472]                     (c) Microsoft Corporation. All rights reserved.                                                                                 C:\Users\shara>cd                                               C:\Users\shara 
+C:\Users\shara>cd -Desktop
+The system cannot find the path specified.
+
+C:\Users\shara>cd "%USERPROFILE%\Desktop"
+The system cannot find the path specified.
+
+C:\Users\shara>cd "%USERPROFILE%\OneDrive\Desktop"
+
+C:\Users\shara\OneDrive\Desktop>cd AI agent
+
+C:\Users\shara\OneDrive\Desktop\AI agent>git clone https://github.com/browser-use/web-ui
+Cloning into 'web-ui'...
+remote: Enumerating objects: 2692, done.
+remote: Total 2692 (delta 0), reused 0 (delta 0), pack-reused 2692 (from 2)
+Receiving objects: 100% (2692/2692), 18.89 MiB | 3.00 MiB/s, done.
+Resolving deltas: 100% (1640/1640), done.
+
+C:\Users\shara\OneDrive\Desktop\AI agent>cd web-ui
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+Downloading uv 0.7.13 (x86_64-pc-windows-msvc)
+Installing to C:\Users\shara\.local\bin
+  uv.exe
+  uvx.exe
+  uvw.exe
+everything's installed!
+
+To add C:\Users\shara\.local\bin to your PATH, either restart your shell or run:
+
+    set Path=C:\Users\shara\.local\bin;%Path%   (cmd)
+    $env:Path = "C:\Users\shara\.local\bin;$env:Path"   (powershell)
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui> uv venv --python 3.13
+'uv' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui> set Path=C:\Users\shara\.local\bin;%Path%
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui> uv venv --python 3.13
+Using CPython 3.13.0 interpreter at: C:\Users\shara\AppData\Local\Programs\Python\Python313\python.exe
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>
+
+C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>.venv\Scripts\activate
+
+(web-ui) C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>uv pip install -r requirements.txt
+Resolved 165 packages in 16.79s
+      Built ibm-cos-sdk-core==2.14.2
+      Built ibm-cos-sdk-s3transfer==2.14.2
+      Built pyperclip==1.9.0
+      Built ibm-cos-sdk==2.14.2
+Prepared 165 packages in 1m 52s
+Installed 165 packages in 11.65s
+ + aiofiles==24.1.0
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.12.13
+ + aiosignal==1.3.2
+ + annotated-types==0.7.0
+ + anthropic==0.54.0
+ + anyio==4.9.0
+ + attrs==25.3.0
+ + audioop-lts==0.2.1
+ + babel==2.17.0
+ + backoff==2.2.1
+ + beautifulsoup4==4.13.4
+ + boto3==1.38.40
+ + botocore==1.38.40
+ + browser-use==0.1.48
+ + cachetools==5.5.2
+ + certifi==2025.6.15
+ + charset-normalizer==3.4.2
+ + click==8.2.1
+ + colorama==0.4.6
+ + courlan==1.3.2
+ + dataclasses-json==0.6.7
+ + dateparser==1.2.1
+ + defusedxml==0.7.1
+ + distro==1.9.0
+ + faiss-cpu==1.11.0
+ + fastapi==0.115.13
+ + ffmpy==0.6.0
+ + filelock==3.18.0
+ + filetype==1.2.0
+ + frozenlist==1.7.0
+ + fsspec==2025.5.1
+ + google-ai-generativelanguage==0.6.18
+ + google-api-core==2.25.1
+ + google-auth==2.40.3
+ + googleapis-common-protos==1.70.0
+ + gradio==5.27.0
+ + gradio-client==1.9.0
+ + greenlet==3.2.3
+ + groovy==0.1.2
+ + grpcio==1.73.0
+ + grpcio-status==1.73.0
+ + h11==0.16.0
+ + h2==4.2.0
+ + hpack==4.1.0
+ + html2text==2025.4.15
+ + htmldate==1.9.3
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + httpx-sse==0.4.0
+ + huggingface-hub==0.33.0
+ + hyperframe==6.1.0
+ + ibm-cos-sdk==2.14.2
+ + ibm-cos-sdk-core==2.14.2
+ + ibm-cos-sdk-s3transfer==2.14.2
+ + ibm-watsonx-ai==1.3.26
+ + idna==3.10
+ + jinja2==3.1.6
+ + jiter==0.10.0
+ + jmespath==1.0.1
+ + json-repair==0.47.1
+ + jsonpatch==1.33
+ + jsonpointer==3.0.0
+ + justext==3.0.2
+ + langchain==0.3.22
+ + langchain-anthropic==0.3.3
+ + langchain-aws==0.2.19
+ + langchain-community==0.3.20
+ + langchain-core==0.3.49
+ + langchain-deepseek==0.1.3
+ + langchain-google-genai==2.1.2
+ + langchain-ibm==0.3.10
+ + langchain-mcp-adapters==0.0.9
+ + langchain-mistralai==0.2.4
+ + langchain-ollama==0.3.0
+ + langchain-openai==0.3.11
+ + langchain-text-splitters==0.3.7
+ + langgraph==0.3.34
+ + langgraph-checkpoint==2.1.0
+ + langgraph-prebuilt==0.1.8
+ + langgraph-sdk==0.1.70
+ + langsmith==0.3.45
+ + lomond==0.3.3
+ + lxml==5.4.0
+ + lxml-html-clean==0.4.2
+ + maincontentextractor==0.0.4
+ + markdown-it-py==3.0.0
+ + markdownify==1.1.0
+ + markupsafe==3.0.2
+ + marshmallow==3.26.1
+ + mcp==1.6.0
+ + mdurl==0.1.2
+ + mem0ai==0.1.93
+ + monotonic==1.6
+ + multidict==6.5.0
+ + mypy-extensions==1.1.0
+ + numpy==2.3.0
+ + ollama==0.5.1
+ + openai==1.88.0
+ + orjson==3.10.18
+ + ormsgpack==1.10.0
+ + packaging==24.2
+ + pandas==2.2.3
+ + pillow==11.2.1
+ + playwright==1.52.0
+ + portalocker==2.10.1
+ + posthog==3.25.0
+ + propcache==0.3.2
+ + proto-plus==1.26.1
+ + protobuf==6.31.1
+ + psutil==7.0.0
+ + psycopg2-binary==2.9.10
+ + pyasn1==0.6.1
+ + pyasn1-modules==0.4.2
+ + pydantic==2.10.6
+ + pydantic-core==2.27.2
+ + pydantic-settings==2.9.1
+ + pydub==0.25.1
+ + pyee==13.0.0
+ + pygments==2.19.1
+ + pyperclip==1.9.0
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.1.0
+ + python-multipart==0.0.20
+ + pytz==2024.2
+ + pywin32==310
+ + pyyaml==6.0.2
+ + qdrant-client==1.14.3
+ + regex==2024.11.6
+ + requests==2.32.4
+ + requests-toolbelt==1.0.0
+ + rich==14.0.0
+ + rsa==4.9.1
+ + ruff==0.12.0
+ + s3transfer==0.13.0
+ + safehttpx==0.1.6
+ + screeninfo==0.8.1
+ + semantic-version==2.10.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + sniffio==1.3.1
+ + soupsieve==2.7
+ + sqlalchemy==2.0.41
+ + sse-starlette==2.3.6
+ + starlette==0.46.2
+ + tabulate==0.9.0
+ + tenacity==9.1.2
+ + tiktoken==0.9.0
+ + tld==0.13.1
+ + tokenizers==0.21.1
+ + tomlkit==0.13.3
+ + tqdm==4.67.1
+ + trafilatura==2.0.0
+ + typer==0.16.0
+ + typing-extensions==4.14.0
+ + typing-inspect==0.9.0
+ + typing-inspection==0.4.1
+ + tzdata==2025.2
+ + tzlocal==5.3.1
+ + urllib3==2.5.0
+ + uvicorn==0.34.3
+ + websockets==15.0.1
+ + xxhash==3.5.0
+ + yarl==1.20.1
+ + zstandard==0.23.0
+
+(web-ui) C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>playwright install
+
+(web-ui) C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>python webui.py --ip 127.0.0.1 --port 7788
+INFO     [telemetry] Anonymized telemetry enabled. See https://docs.browser-use.com/development/telemetry for more information.
+Traceback (most recent call last):
+  File "C:\Users\shara\OneDrive\Desktop\AI agent\web-ui\webui.py", line 4, in <module>
+    from src.webui.interface import theme_map, create_ui
+  File "C:\Users\shara\OneDrive\Desktop\AI agent\web-ui\src\webui\interface.py", line 5, in <module>
+    from src.webui.components.browser_settings_tab import create_browser_settings_tab
+  File "C:\Users\shara\OneDrive\Desktop\AI agent\web-ui\src\webui\components\browser_settings_tab.py", line 2, in <module>
+    from distutils.util import strtobool
+ModuleNotFoundError: No module named 'distutils'
+
+(web-ui) C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>from distutils.util import strtobool
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(web-ui) C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>python webui.py --ip 127.0.0.1 --port 7788
+INFO     [telemetry] Anonymized telemetry enabled. See https://docs.browser-use.com/development/telemetry for more information.
+* Running on local URL:  http://127.0.0.1:7788
+
+To create a public link, set `share=True` in `launch()`.
+Keyboard interruption in main thread... closing server.
+
+(web-ui) C:\Users\shara\OneDrive\Desktop\AI agent\web-ui>python webui.py --ip 127.0.0.1 --port 7788
+INFO     [telemetry] Anonymized telemetry enabled. See https://docs.browser-use.com/development/telemetry for more information.
+* Running on local URL:  http://127.0.0.1:7788
+
+To create a public link, set `share=True` in `launch()`.
+INFO     [src.webui.components.browser_use_agent_tab] Submit button clicked for new task.
+INFO     [src.webui.components.browser_use_agent_tab] Initializing LLM: Provider=google, Model=gemini-2.0-flash, Temp=0.6
+INFO     [src.webui.components.browser_use_agent_tab] Launching new browser instance.
+INFO     [src.webui.components.browser_use_agent_tab] Creating new browser context.
+INFO     [src.webui.components.browser_use_agent_tab] Initializing new agent for task: go to the google.com and search for who is the founder of snapchat
+INFO     [agent] 🧠 Starting an agent with main_model=models/gemini-2.0-flash +vision +memory, planner_model=None, extraction_model=None
+WARNING  [agent] ❌ Expected LLM API Key environment variables might be missing for ChatGoogleGenerativeAI: GOOGLE_API_KEY
+WARNING  [agent] ⚠️ Agent(enable_memory=True) is set but missing some required packages, install and re-run to use memory features: pip install browser-use[memory]
+INFO     [agent] 🚀 Starting task: go to the google.com and search for who is the founder of snapchat
+INFO     [agent] 📍 Step 1
+INFO     [agent] 🤷 Eval: Unknown - I have just started and the page is blank.
+INFO     [agent] 🧠 Memory: I have not done anything yet.
+INFO     [agent] 🎯 Next goal: Go to google.com
+INFO     [agent] 🛠️  Action 1/1: {"go_to_url":{"url":"https://www.google.com"}}
+INFO     [src.webui.components.browser_use_agent_tab] Step 1 completed.
+INFO     [controller] 🔗  Navigated to https://www.google.com
+INFO     [agent] 📍 Step 2
+INFO     [agent] 👍 Eval: Success - I have successfully navigated to Google.com
+INFO     [agent] 🧠 Memory: I have not done anything yet, now I am at google.com
+INFO     [agent] 🎯 Next goal: Search for who is the founder of snapchat
+INFO     [agent] 🛠️  Action 1/2: {"input_text":{"index":6,"text":"who is the founder of snapchat"}}
+INFO     [agent] 🛠️  Action 2/2: {"click_element_by_index":{"index":9}}
+INFO     [src.webui.components.browser_use_agent_tab] Step 2 completed.
+INFO     [controller] ⌨️  Input who is the founder of snapchat into index 6
+INFO     [agent] Element index changed after action 1 / 2, because page changed.
+INFO     [agent] 📍 Step 3
+INFO     [agent] 👍 Eval: Success - I have successfully inputted the text and clicked the search button
+INFO     [agent] 🧠 Memory: I have not done anything yet, now I am at google.com and searched for who is the founder of snapchat
+INFO     [agent] 🎯 Next goal: Find out who the founder is
+INFO     [agent] 🛠️  Action 1/1: {"click_element_by_index":{"index":20}}
+INFO     [src.webui.components.browser_use_agent_tab] Step 3 completed.
+INFO     [controller] 🖱️  Clicked button with index 20:
+INFO     [agent] 📍 Step 4
+INFO     [agent] 🤷 Eval: I have successfully found out who the founders are
+INFO     [agent] 🧠 Memory: I have not done anything yet, now I am at google.com and searched for who is the founder of snapchat and found the answer
+INFO     [agent] 🎯 Next goal: Complete the task
+INFO     [agent] 🛠️  Action 1/1: {"done":{"text":"The founders of Snapchat are Evan Spiegel, Bobby Murphy, and Reggie Brown.","success":true}}
+INFO     [src.webui.components.browser_use_agent_tab] Step 4 completed.
+INFO     [agent] 📄 Result: The founders of Snapchat are Evan Spiegel, Bobby Murphy, and Reggie Brown.
+INFO     [agent] ✅ Task completed
+INFO     [agent] ✅ Successfully
+INFO     [agent] 📝 Total input tokens used (approximate): 15825
+INFO     [src.webui.components.browser_use_agent_tab] Agent task finished. Duration: 36.18s, Tokens: 15825
+INFO     [agent] Created GIF at ./tmp/agent_history\7a5cf69e-c475-4a34-bf90-43c3a5798db4\7a5cf69e-c475-4a34-bf90-43c3a5798db4.gif
+INFO     [src.webui.components.browser_use_agent_tab] Agent task completing...
+INFO     [src.webui.components.browser_use_agent_tab] Agent task completed processing.
+INFO     [src.webui.components.browser_use_agent_tab] Explicitly saving agent history to: ./tmp/agent_history\7a5cf69e-c475-4a34-bf90-43c3a5798db4\7a5cf69e-c475-4a34-bf90-43c3a5798db4.json
+INFO     [src.webui.components.browser_use_agent_tab] GIF found at: ./tmp/agent_history\7a5cf69e-c475-4a34-bf90-43c3a5798db4\7a5cf69e-c475-4a34-bf90-43c3a5798db4.gif
+
+
+
+
